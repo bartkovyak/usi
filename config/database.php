@@ -54,11 +54,11 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => 'localhost'
-            'port' => '3306'
-            'database' => 'vbartkovyak'
-            'username' => 'vbartkovyak'
-            'password' => 'BArt6987'
+            'host' => 'localhost',
+            'port' => '3306',
+            'database' => 'bartkovyak',
+            'username' => 'bartkovyak',
+            'password' => 'BArt6987',
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix' => '',

@@ -8,7 +8,7 @@ Route::match(['post', 'put'], 'doctor/{id}/edit', 'DoctorController@edit');
 Route::match(['get', 'delete'], 'doctor/{id}/delete', 'DoctorController@delete');
 Route::get('doctor/{id}', array('as' => 'read_doctor', 'uses' => 'DoctorController@get'));
 Route::get('doctor/{id}/appointment', array('as' => 'read_doctor_appointments', 'uses' => 'DoctorController@getAppointments'));
-Route::get('doctor/{id}/appointment/{id}', 'DoctorController@getAppointment');
+Route::get('doctor/{id}/appointment/{aid}', 'DoctorController@getAppointment');
 Route::get('doctor', array('as' => 'read_doctors', 'uses' => 'DoctorController@show'));
 Route::get('doctor/speciality/{id}', 'DoctorController@getForSpeciality');
 
@@ -18,7 +18,7 @@ Route::match(['post', 'put'], 'patient/{id}/edit', 'PatientController@edit');
 Route::match(['get', 'delete'], 'patient/{id}/delete', 'PatientController@delete');
 Route::get('patient/{id}', 'PatientController@get');
 Route::get('patient/{id}/appointment', 'PatientController@getAppointments');
-Route::get('patient/{id}/appointment/{id}', 'PatientController@getAppointment');
+Route::get('patient/{id}/appointment/{aid}', 'PatientController@getAppointment');
 Route::get('patient', 'PatientController@show');
 
 // Appointment

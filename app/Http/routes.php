@@ -14,7 +14,6 @@ Route::get('doctor/speciality/{id}', 'DoctorController@getForSpeciality');
 
 // Patient
 Route::post('patient/create', 'PatientController@create');
-Route::match(['post', 'put'], 'patient/{id}/edit', 'PatientController@edit');
 Route::match(['get', 'delete'], 'patient/{id}/delete', 'PatientController@delete');
 Route::get('patient/{id}', 'PatientController@get');
 Route::get('patient/{id}/appointment', 'PatientController@getAppointments');
